@@ -16,6 +16,6 @@ public class Tester {
 			seq[i] = i+1;
 		}
 		System.out.println(Arrays.toString(seq));
-		seq = ArrayUtils.remove(seq, 3);
+		// seq = ArrayUtils.remove(seq, 3);
 	}
 }
