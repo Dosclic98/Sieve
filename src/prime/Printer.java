@@ -17,5 +17,6 @@ public class Printer {
 				}
 			}
 		}
+		System.out.println("Ho stampato " + cnt + " numeri primi");
 	}
 }
