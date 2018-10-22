@@ -1,22 +1,15 @@
 package prime;
 
+import java.util.ArrayList;
+
 public class Printer {
-	public static void printMatrixCmpl(int[][] arr, int n) {
-		for(int i=0;i<n;i++) {
-			System.out.println("[" + arr[i][0] + ", " + arr[i][1] + "]");
-		}
-	}
-	public static void printMatrixPrime(int[][] arr, int n) {
-		int cnt=0;
-		for(int i=0;i<n;i++) {
-			if(arr[i][1] == 0) {
-				System.out.print("[" + arr[i][0] + "]" + ", ");
-				cnt++;
-				if((cnt%5) == 0) {
-					System.out.println("");
-				}
+	public static void printArrayList(ArrayList<Integer> toPrint) {
+		for(int i=0;i<toPrint.size();i++) {
+			System.out.print(toPrint.get(i) + " ");
+			if((i+1)%5 == 0) {
+				System.out.println("");
 			}
 		}
-		System.out.println("Ho stampato " + cnt + " numeri primi");
+		System.out.println("");
 	}
 }
